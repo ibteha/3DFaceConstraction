@@ -1,4 +1,4 @@
-## Accurate 3D Face Reconstruction with Weakly-Supervised Learning: From Single Image to Image Set ##
+## Accurate 3D Face Construction with Weakly-Supervised Learning: From Single Image to Image Set ##
 <p align="center"> 
 <img src="example.gif">
 </p>
