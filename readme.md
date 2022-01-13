@@ -1,6 +1,6 @@
-## Accurate 3D Face Construction with Weakly-Supervised Learning: From Single Image to Image Set ##
+## Accurate 3D Face Reconstruction with Weakly-Supervised Learning: From Single Image to Image Set ##
 <p align="center"> 
-<img src="example.gif">
+<img src="/repo_image/example.gif">
 </p>
 
 This is a tensorflow implementation of the following paper:
@@ -30,19 +30,19 @@ The method reconstructs faces with high accuracy. Quantitative evaluations (shap
 ### ● High fidelity textures
 The method produces high fidelity face textures meanwhile preserves identity information of input images. Scene illumination is also disentangled to generate a pure albedo.
 <p align="center"> 
-<img src="albedo.png">
+<img src="/repo_image/albedo.png">
 </p>
 
 ### ● Robust
 The method can provide reasonable results under extreme conditions such as large pose and occlusions.
 <p align="center"> 
-<img src="extreme.png">
+<img src="/repo_image/extreme.png">
 </p>
 
 ### ● Aligned with images
 Our method aligns reconstruction faces with input images. It provides face pose estimation and 68 facial landmarks which are useful for other tasks. We conduct an experiment on AFLW_2000 dataset (NME) to evaluate the performance, as shown in the table below:
 <p align="center"> 
-<img src="alignment.png">
+<img src="/repo_image/alignment.png">
 </p>
 
 |Method|[0°,30°]|[30°,60°]|[60°,90°]|Overall|
@@ -206,7 +206,7 @@ Upload the training code for single image face reconstruction.
 
 2. We assume a [pinhole camera model](https://en.wikipedia.org/wiki/Pinhole_camera_model) for face projection. The camera is positioned at (0,0,10) (dm) in the world coordinate and points to the negative z axis. We set the camera fov to 12.6 empirically and fix it during training and inference time. Faces in canonical views are at the origin of the world coordinate and facing the positive z axis. Rotations and translations predicted by the R-Net are all with respect to the world coordinate.
 <p align="center"> 
-<img src="camera.png" width="300">
+<img src="/repo_image/camera.png" width="300">
 </p>
 
 3. The current model is trained using 3-channel (r,g,b) scene illumination instead of white light described in the paper. As a result, the gamma coefficient that controls lighting has a dimension of 27 instead of 9. 
@@ -215,4 +215,3 @@ Upload the training code for single image face reconstruction.
 
 5. Our model may give inferior results for images with severe perspetive distortions (e.g., some selfies). In addition, we cannot well handle faces with eyes closed due to the lack of these kind of images in the training data.
   
-
