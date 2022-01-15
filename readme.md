@@ -71,7 +71,7 @@ Faces are represented with Basel Face Model 2009, which is easy for further mani
 ### Installation ###
 #### 1. Clone the repository
 ```
-git clone https://github.com/ibteha/3DFaceConstraction.git --recursive
+git clone https://github.com/ibtehajali67/3DFaceConstraction.git --recursive
 cd 3DFaceConstraction
 ```
 
